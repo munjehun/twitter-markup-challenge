@@ -1,0 +1,32 @@
+<!-- html 문서안에서 논리적으로 완결성이 있는 집합체를 마크업할 때 div보다 section태그 사용 -->
+<section>
+  <!-- sectioning elements이기 때문에 heading(h1) 작성 -->
+  <h1>What's happening?</h1>
+  <form action="#" method="POST">
+    <img src="#" alt="User profile image" />
+    <textarea placeholder="What's happening?" maxlength="280"></textarea>
+
+    <button type="button" aria-label="Upload files">
+      <!-- icon -->
+    </button>
+    <input type="file" accept="image/*, video/*" multiple />
+    <!-- input 태그는 죽어도 스타일을 안먹기 때문에 버튼을 만들고 자바스크립트로 처리해줘야 한다 -->
+    <button type="button" aria-label="Search GIF">
+      <!-- icon -->
+    </button>
+    <button type="button" aria-label="Create a poll">
+      <!-- icon -->
+    </button>
+    <button type="button" aria-label="Select emoji">
+      <!-- icon -->
+    </button>
+    <strong aria-label="0 outof 280 characters">
+      <!-- JS로 글 작성할 때마다 숫자 올라가도록, CSS로 스타일 처리 -->
+    </strong>
+
+    <button type="button" aria-label="Add another Tweet">
+      <!-- icon -->
+    </button>
+    <button type="submit">Tweet</button>
+  </form>
+</section>
